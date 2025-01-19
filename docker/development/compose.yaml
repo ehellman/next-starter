@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/docker/compose/refs/heads/v1/compose/config/compose_spec.json
+
+services:
+  next_app:
+    build:
+      context: ../../
+      dockerfile: docker/development/Dockerfile
+    restart: always
+    ports:
+      - 3000:3000
+    networks:
+      - next_app_network
+networks:
+  next_app_network:
