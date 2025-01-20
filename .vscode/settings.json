@@ -49,5 +49,6 @@
     "pcss",
     "postcss",
     "github-actions-workflow"
-  ]
+  ],
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint"
 }

@@ -1,11 +1,11 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-import * as pageStyles from "./page.css";
-import "./global.css";
+import Image from 'next/image';
+import * as pageStyles from './page.css';
+import styles from './page.module.css';
+import './global.css';
 
 export default function Home() {
   return (
-    <div className={[styles.page, pageStyles.page].join(" ")}>
+    <div className={[styles.page, pageStyles.page].join(' ')}>
       <main className={styles.main}>
         <Image
           className={styles.logo}
@@ -17,8 +17,11 @@ export default function Home() {
         />
         <ol>
           <li>
-            <h1 role="heading">Home</h1>
-            Get started by editing <code>app/page.tsx</code>.
+            <h1>Home</h1>
+            Get started by editing
+            {' '}
+            <code>app/page.tsx</code>
+            .
           </li>
           <li>Save and see your changes instantly.</li>
         </ol>
